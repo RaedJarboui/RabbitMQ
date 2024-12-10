@@ -8,11 +8,12 @@ import org.springframework.amqp.support.converter.MessageConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+@Configuration
 public class MessagingConfig {
 	
-	private static final String QUEUE = "rabbitmq-queue";
-	private static final String EXCHANGE = "rabbitmq-exchange";
-	private static final String ROUTING_KEY = "rabbitmq-routing-key";
+	public static final String QUEUE = "rabbitmq-queue";
+	public static final String EXCHANGE = "rabbitmq-exchange";
+	public static final String ROUTING_KEY = "rabbitmq-routing-key";
 
 	
 	

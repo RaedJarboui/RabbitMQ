@@ -6,10 +6,18 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ProductRequest { //publish ProductRequest to queue
-	
+	private String id;
 	private String name;
 	private Double price;
 	private int quantity;
+	
+	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	public String getName() {
 		return name;
 	}
